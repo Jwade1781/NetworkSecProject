@@ -15,8 +15,12 @@ problems that had been presented (Both contributors being forced to move), this 
 
 ## Security Implementations
 The security features adopted include:
-  RSA Encryption for secure communication through a network (Prevents Man in Middle)
-  Salting & HASH new user passwords (Prevents Inside Intrusion from viewing passwords & Rainbow attack)
+  RSA Encryption (2048 bit) for secure communication through a network (Prevents Man in Middle)
+  Salting (64 bit) & HASH (SHA 256) new user passwords (Prevents Inside Intrusion from viewing passwords & Rainbow attack)
+  Prevention of inputting common passwords (Looks through list of 10,000 of most commonly used passwords) (Help Prevent Brute Force)
+  Requires at least 12 character passwords (Help Prevent Brute Force)
+  Attempted Login Limit of 3 (Help Prevent Brute Force)
+  Blacklist of IP after too many failed Login Attempts (Help Prevent Brute Force)
   
 ## Problems
 Known problems in the program:
