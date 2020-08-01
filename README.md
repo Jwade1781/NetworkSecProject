@@ -2,10 +2,16 @@
 ## Network Security Project FPU SP 2020
 ## Produced by Jeremy Wade & Tito Leadon
 
+Project is now over and no longer supported; was severely cripped in productivity during COVID 19
+May come back later to fix problems, improve design (Major Refactor, Implement user database rather than .txt files for users, add AES Encryption)
+
 ## Goal
 The goal of this project is to not create a fully developing BlackJack App but instead to utilize different 
 security measures that could be implemented for both in house and users. It is NOT advised to use any part
 of the code that was produced in a deployed project.
+
+Originally, the project was to create all encryption and decryption modules from scratch. Due to time constraints imposed by COVID-19 and
+problems that had been presented (Both contributors being forced to move), this was abandoned. 
 
 ## Security Implementations
 The security features adopted include:
@@ -20,6 +26,9 @@ Known problems in the program:
   The Random Number Generator for producing keys is not totally random; used standard library Random module 
     -> Can pull Random numbers from random.org API. This uses radio receivers from where they are located to pickup
        atmospherioc noise for entropy opposed to using the current system time on the running machine.
+       
+  Does not send two cards to both host and user, was not a concern as the scope was not meant to be a fully developed game but rather
+  utilizing what was learned in Network Security.
 
 ## How to Run
 This program works by running the test files test_host.py and test_client.py
